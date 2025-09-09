@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Чистота в деталях</title>
+  <link rel="stylesheet" href="services.css">
+</head>
+<body>
+
+  <!-- 🔹 Шапка -->
+  <header class="services-header">
+    <a href="index.html" class="back-btn">← Назад</a>
+    <h1>Чистота в деталях: методы и химия</h1>
+  </header>
+
+  <!-- 🔹 Сетка всех услуг -->
+  <section class="services-grid">
+    <!-- Основные -->
+    <div class="service-card" data-service="windows">
+      <img src="img/окно.png" alt="Мойка окон">
+      <h3>Мойка окон</h3>
+      <button class="service-btn">Подробнее</button>
+    </div>
+    <div class="service-card" data-service="furniture">
+      <img src="img/окно1.png" alt="Химчистка мебели">
+      <h3>Химчистка мебели</h3>
+      <button class="service-btn">Подробнее</button>
+    </div>
+    <div class="service-card" data-service="carpets">
+      <img src="img/окно2.png" alt="Химчистка ковров">
+      <h3>Химчистка ковров</h3>
+      <button class="service-btn">Подробнее</button>
+    </div>
+    <div class="service-card" data-service="cleaning">
+      <img src="img/окно3.png" alt="Влажная уборка">
+      <h3>Влажная уборка</h3>
+      <button class="service-btn">Подробнее</button>
+    </div>
+    <div class="service-card" data-service="general">
+      <img src="img/general.png" alt="Генеральная уборка">
+      <h3>Генеральная уборка</h3>
+      <button class="service-btn">Подробнее</button>
+    </div>
+    <div class="service-card" data-service="postrepair">
+      <img src="img/postrepair.png" alt="Уборка после ремонта">
+      <h3>Уборка после ремонта</h3>
+      <button class="service-btn">Подробнее</button>
+    </div>
+    <div class="service-card" data-service="commercial">
+      <img src="img/commercial.png" alt="Коммерческие помещения">
+      <h3>Коммерческие помещения</h3>
+      <button class="service-btn">Подробнее</button>
+    </div>
+    <div class="service-card" data-service="allin">
+      <img src="img/allin.png" alt="Уборка «Всё включено»">
+      <h3>Уборка «Всё включено»</h3>
+      <button class="service-btn">Подробнее</button>
+    </div>
+
+    <!-- Доп. услуги -->
+    <div class="service-card" data-service="curtains">
+      <img src="img/curtains.png" alt="Стирка и глажка штор">
+      <h3>Стирка и глажка штор</h3>
+      <button class="service-btn">Подробнее</button>
+    </div>
+    <div class="service-card" data-service="windowset">
+      <img src="img/windowset.png" alt="1 окно, портьера и тюль">
+      <h3>1 окно, портьера и тюль</h3>
+      <button class="service-btn">Подробнее</button>
+    </div>
+    <div class="service-card" data-service="bathroom">
+      <img src="img/bathroom.png" alt="Дезинфекция ванной">
+      <h3>Дезинфекция ванной</h3>
+      <button class="service-btn">Подробнее</button>
+    </div>
+    <div class="service-card" data-service="dishwasher">
+      <img src="img/dishwasher.png" alt="Посудомойка">
+      <h3>Посудомойка</h3>
+      <button class="service-btn">Подробнее</button>
+    </div>
+    <div class="service-card" data-service="eco">
+      <img src="img/eco.png" alt="Эко чистка">
+      <h3>Эко чистка</h3>
+      <button class="service-btn">Подробнее</button>
+    </div>
+    <div class="service-card" data-service="fridge">
+      <img src="img/fridge.png" alt="Холодильник">
+      <h3>Мытьё холодильника</h3>
+      <button class="service-btn">Подробнее</button>
+    </div>
+    <div class="service-card" data-service="kitchen">
+      <img src="img/kitchen.png" alt="Кухонный гарнитур">
+      <h3>Кухонный гарнитур</h3>
+      <button class="service-btn">Подробнее</button>
+    </div>
+    <div class="service-card" data-service="wardrobe">
+      <img src="img/wardrobe.png" alt="Внутри шкафов">
+      <h3>Внутри шкафов</h3>
+      <button class="service-btn">Подробнее</button>
+    </div>
+    <div class="service-card" data-service="windowsoutside">
+      <img src="img/windowsoutside.png" alt="Окна снаружи">
+      <h3>Окна снаружи</h3>
+      <button class="service-btn">Подробнее</button>
+    </div>
+    <div class="service-card" data-service="oven">
+        <img src="img/oven.png" alt="Духовой шкаф">
+        <h3>Духовой шкаф</h3>
+        <button class="service-btn">Подробнее</button>
+      </div>
+      <div class="service-card" data-service="hood">
+        <img src="img/hood.png" alt="Вытяжка">
+        <h3>Вытяжка</h3>
+        <button class="service-btn">Подробнее</button>
+      </div>
+    </section>
+  
+    <!-- 🔹 Модальное окно -->
+    <div id="serviceModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn-service">&times;</span>
+        <h2 id="serviceTitle"></h2>
+        <ul id="serviceList"></ul>
+        <div class="chemistry">
+          <h3>Мы используем:</h3>
+          <ul>
+            <li>Профессиональная химия Karcher, Grass, Pro-Brite</li>
+            <li>Эко-средства без резкого запаха</li>
+            <li>Пылесосы Thomas, Karcher</li>
+            <li>Парогенератор и роторные машины</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <script src="services.js"></script>
+  </body>
+  </html>
